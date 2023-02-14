@@ -29,7 +29,7 @@ class _RelatedState extends State<Related> {
           itemBuilder: (context, i) {
             return GestureDetector(
               onTap: (){
-                Navigator.of(context).pushNamed('detail',arguments: i);
+                Navigator.of(context).pushNamed('detail',arguments: data[i]);
               },
               child: Card(
                 elevation: 10,
@@ -47,7 +47,7 @@ class _RelatedState extends State<Related> {
                           children: [
                             Image(
                               image: NetworkImage('${data[i]['image']}'),
-                              height: 47,
+                              height: 45,
                               fit: BoxFit.cover,
                             ),
                             Text("${data[i]['name']}"),

@@ -1,3 +1,4 @@
+import 'package:advancetest1/cart.dart';
 import 'package:advancetest1/detailpage.dart';
 import 'package:advancetest1/relatedPage.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,7 @@ void main() {
       '/': (context) => const HomePage(),
       'related' : (context) => const Related(),
       'detail' : (context) => const DetailPage(),
+      'cart' : (context) => const CartPage(),
     },
   ));
 }
